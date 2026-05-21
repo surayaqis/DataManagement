@@ -98,7 +98,8 @@ All four models achieved identical performance with automated tuning:
 ## Instructions to Reproduce
 
 ### Prerequisites
-- Databricks workspace (Free Edition or higher)
+- Databricks workspace (Free Edition or higher) https://www.databricks.com/
+- Login required
 - Serverless compute with CPU
 - Pre-installed libraries (included by default):
   - `pyspark.ml`
