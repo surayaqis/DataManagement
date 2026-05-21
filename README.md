@@ -8,6 +8,8 @@ This project demonstrates a complete machine learning workflow using **Apache Sp
 **Course**: STQD6324 Data Management — Assignment 1  
 **Platform**: Databricks with Serverless Compute
 
+### Assignment1.ipynb - Full Notebook without Outputs, to run via Databricks
+### Assignment1_withOutput.ipynb - Full Notebook with Outputs
 ---
 
 ## Dataset and Methodology
