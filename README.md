@@ -5,9 +5,10 @@ source tables all the way to an executive dashboard. The project ingests and cle
 data in **Apache Hive**, analyses and visualises it in **Python (Google Colab)**, and
 presents the findings for decision-makers.
 
-> **Objective** *What is driving — and quietly eroding — the profit of a US
-> superstore, and what should management do about it?*
+---
+[![Superstore Dashboard](https://raw.githubusercontent.com/<user>/<repo>/main/figures/dashboard_preview.png)](https://app.fabric.microsoft.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
 
+ 👆 Click link to open the live, interactive report.
 ---
 
 ## 1. Report Details & Problem Statement
@@ -101,6 +102,7 @@ prioritised recommendations and a conclusion.
 |---|---|
 | `orders_merged.csv` | The cleaned, merged analysis table (output of Stage 1) |
 | `DM_FinalReport.ipynb` | The Colab notebook: visualisations, interpretation, insights, recommendations, conclusion, references |
+| `Superstore Dashboard.pbix` | Power BI Dashboard|
 | `README.md` | Report overview |
 
 ---
@@ -127,6 +129,9 @@ prioritised recommendations and a conclusion.
    you can start at Stage 2 directly.
 2. **Run the analysis** — open `DM_FinalReport.ipynb` in Google Colab (or Jupyter), upload
    the CSV, and run all cells. Requires `pandas`, `numpy`, `matplotlib`, `seaborn`.
+3. **Power BI Dashboard** - open `Superstore.pbix` in Power BI Desktop, change the data source and refresh the dashboard
+   Alternately, you may view the dasboard via link below
+   [![Superstore Dashboard](https://raw.githubusercontent.com/<user>/<repo>/main/figures/dashboard_preview.png)](https://app.fabric.microsoft.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
 
 ---
 
@@ -137,6 +142,7 @@ prioritised recommendations and a conclusion.
 | Ingestion, cleaning, merging | Apache Hive (HiveQL) in HDFS |
 | Analysis & visualisation | Python · pandas · NumPy · matplotlib · seaborn (Google Colab) |
 | Source control / sharing | GitHub |
+| Dashboard Dynamic Visualization | Power BI |
 
 ---
 
