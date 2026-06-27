@@ -6,9 +6,10 @@ data in **Apache Hive**, analyses and visualises it in **Python (Google Colab)**
 presents the findings for decision-makers.
 
 ---
-[![Superstore Dashboard](https://raw.githubusercontent.com/<user>/<repo>/main/figures/dashboard_preview.png)](https://app.fabric.microsoft.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
+📊 [Superstore Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
 
- 👆 Click link to open the live, interactive report.
+ 👆 Click link to view Power BI Dashboard
+ 
 ---
 
 ## 1. Report Details & Problem Statement
@@ -42,8 +43,8 @@ controllable rather than a function of weak demand.
 | **Grain** | One row per order *line item* (a single product within an order) |
 | **Size after cleaning** | 10,194 rows × 28 columns |
 
-The dataset arrives as **three related tables**, which is what makes it a genuine *data
-management* exercise rather than a single-file analysis:
+
+The dataset arrives as **three related tables**:
 
 - **Orders** — the transaction line items (dates, customer, product, geography, `sales`,
   `quantity`, `discount`, `profit`).
@@ -79,7 +80,7 @@ The three raw tables are loaded into Hive and combined with a HiveQL pipeline:
 ### Stage 2 — Exploratory analysis & visualisation (Python, Google Colab)
 The cleaned CSV is loaded with **pandas**, a few analytical fields are derived
 (`is_returned`, `profit_margin`, `ship_days`, discount bands), and the data is visualised
-with **matplotlib** and **seaborn**. Two layers of charts are produced:
+with **matplotlib** and **seaborn** as well as Power BI. Two layers of charts are produced:
 
 - **Analyst-grade** (detailed, one question per chart): annual trend, monthly seasonality,
   category & sub-category profitability, region & segment performance, the discount–profit
@@ -88,6 +89,7 @@ with **matplotlib** and **seaborn**. Two layers of charts are produced:
   growth–margin matrix.
 
 Every chart is accompanied by an **interpretation** and a **discussion**
+
 
 ### Stage 3 — Insights, recommendations & conclusion
 The analysis is distilled into written findings : the discount cliff, the Furniture profit
@@ -100,8 +102,9 @@ prioritised recommendations and a conclusion.
 
 | Item | Description |
 |---|---|
-| `orders_merged.csv` | The cleaned, merged analysis table (output of Stage 1) |
-| `DM_FinalReport.ipynb` | The Colab notebook: visualisations, interpretation, insights, recommendations, conclusion, references |
+| `orders_merged.csv` | The merged analysis table (output of Stage 1) |
+| `superstore_sales_cleaned.csv` | The cleaned analysis table after adding few new columns. This file is used for visualization in Power BI |
+| `SuperstoreSales.ipynb` | The Colab notebook: visualisations, interpretation, insights, recommendations, conclusion, references |
 | `Superstore Dashboard.pbix` | Power BI Dashboard|
 | `README.md` | Report overview |
 
@@ -127,11 +130,11 @@ prioritised recommendations and a conclusion.
 
 1. **Cleaned data already provided** — `orders_merged.csv` is the Stage 1 output, so
    you can start at Stage 2 directly.
-2. **Run the analysis** — open `DM_FinalReport.ipynb` in Google Colab (or Jupyter), upload
+2. **Run the analysis** — open `SuperstoreSales.ipynb` in Google Colab (or Jupyter), upload
    the CSV, and run all cells. Requires `pandas`, `numpy`, `matplotlib`, `seaborn`.
-3. **Power BI Dashboard** - open `Superstore.pbix` in Power BI Desktop, change the data source and refresh the dashboard
+3. **Power BI Dashboard** - open `Superstore Dashboard.pbix` in Power BI Desktop, change the data source and refresh the dashboard
    Alternately, you may view the dasboard via link below
-   [![Superstore Dashboard](https://raw.githubusercontent.com/<user>/<repo>/main/figures/dashboard_preview.png)](https://app.fabric.microsoft.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
+   📊 [Superstore Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
 
 ---
 
@@ -145,7 +148,3 @@ prioritised recommendations and a conclusion.
 | Dashboard Dynamic Visualization | Power BI |
 
 ---
-
-*Prepared as part of the Master of Science (Data Science & Analytics) programme. Full
-citations for the dataset and software libraries are listed in the References section of
-`STQD6324_FinalReport_P166248.ipynb`.*
