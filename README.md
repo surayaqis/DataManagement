@@ -90,6 +90,15 @@ with **matplotlib** and **seaborn** as well as Power BI. Two layers of charts ar
 
 Every chart is accompanied by an **interpretation** and a **discussion**
 
+### Power BI Dashboard 
+1. **ETL**
+- The data source is `superstore_sales_cleaned.csv`, a single table loaded into Power BI via Google Sheet link.
+- New column is added on Discount band
+- DAX Measures are added for calculations in visualisations.
+
+2. **Deployment**
+`Superstore Dashboard.pbix` is then uploaded into Power BI Workspace, and the embed link is copied for public view.
+
 
 ### Stage 3 — Insights, recommendations & conclusion
 The analysis is distilled into written findings : the discount cliff, the Furniture profit
@@ -132,7 +141,7 @@ prioritised recommendations and a conclusion.
    you can start at Stage 2 directly.
 2. **Run the analysis** — open `SuperstoreSales.ipynb` in Google Colab (or Jupyter), upload
    the CSV, and run all cells. Requires `pandas`, `numpy`, `matplotlib`, `seaborn`.
-3. **Power BI Dashboard** - open `Superstore Dashboard.pbix` in Power BI Desktop, change the data source and refresh the dashboard
+3. **Power BI Dashboard** - open `Superstore Dashboard.pbix` in Power BI Desktop, change the data source if needed and refresh the dashboard.
    Alternately, you may view the dasboard via link below
    📊 [Superstore Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMDU4ODA4ZWYtOTJmOC00NTg1LTliMDAtODZhOTUwOTEzN2ViIiwidCI6IjdhODU3ZTA5LWQ5YWQtNDNkMi04OTNlLTMyMTVkZGRkM2EzYiIsImMiOjEwfQ%3D%3D)
 
